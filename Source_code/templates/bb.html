@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Victoria Hotel</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/dist/pickmeup.min.js"></script>
+    <script type="text/javascript" src="../static/dist/handleCounter.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/pickmeup.css">
+    <link rel="stylesheet" type="text/css" href="../static/handle-counter.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="../static/dist/jquery.scrollUp.js"></script>
+     <script type="text/javascript" src="../static/dist/demo.js"></script>
+     
+    
+    
+    </head>
+    
+<body>
+    <header class="tm-header">
+        <img class="tm-logo" src="../static/images/Victoria.png" alt="Victoria Hotel">
+        <nav class="tm-nav">
+       <div>
+            <ul>
+                <li class="tm-list"><form class="tm-list" action="/home" method="GET">
+                    <input type="submit" value="Home">
+                    </form>
+                </li>
+                <li><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3></li>
+                <li class="tm-list"><form class="tm-list" action="/rooms" method="GET">
+                    <input type="submit" value="Rooms">
+                    </form>
+                </li>
+                <li><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3></li>
+                <li class="tm-list"><form class="tm-list" action="/home" method="GET">
+                    <input type="submit" value="Explore">
+                    </form>
+                </li>
+                <li><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3></li>
+                  <li class="tm-list"><form class="tm-list" action="/Billing" method="GET">
+                      <input type="submit" value="Billing">
+                      </form>
+                  </li>
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="tm-main">
+           <p>Register</p>
+    </section>
+    
+    
+    
+    <section class="tm-booking">
+        <center>
+        <div class="container">
+            
+    <form class="grid" action="/Customer_reg" method="GET">
+        <table width="70%">
+            <tr>
+                <td><label  for="C_id" id="inlinelable">Customer ID</label></td>
+                <td><input type="text" id="C_id" name="C_id" value={{C_id}}></td>
+            </tr>
+        </table>
+        </form>
+        </div>
+    <div class="container">
+    <form class="grid" action="/Customer_reg" method="POST">
+        <table width="70%">
+            <tr>
+                <td><label  for="F_name" id="inlinelable">First name</label></td>
+                <td><input type="text" id="F_name" name="F_name"><br></td>
+            </tr>
+            <tr>
+                <td><label  for="L_name" id="inlinelable">Last name</label></td>
+                <td><input type="text" id="L_name" name="L_name"><br></td>
+            </tr>
+            <tr>
+                <td><label  for="Gender" id="inlinelable">Gender</label></td>
+                <td><input type="text" id="Gender" name="Gender"></td>
+            </tr>
+            <tr>
+                <td><label  for="Age" id="inlinelable">Age</label></td>
+                <td><center><input type="number" id="Age" name="Age" ></center></td>
+            </tr>
+            <tr>
+                <td><label  for="Nationality" id="inlinelable">Nationality</label></td>
+                <td><input type="text" id="Nation" name="Nationality"><br></td>
+            </tr>
+            <tr>
+                <td><label  for="Address" id="inlinelable">Address</label></td>
+                <td><input type="text" id="Address" name="Address" ><br></td>
+            </tr>
+            <tr>
+                <td><label  for="Contact_no" id="inlinelable">Contact No.</label></td>
+                <td><input type="text" id="Contact" name="Contact_no"><br></td>
+            </tr>
+            <tr>
+                <td><label  for="email" id="inlinelable">E-mail</label></td>
+                <td><input type="text" id="email" name="email"><br><br></td>
+            </tr>
+        </table> 
+    <div type="container-1">
+    <input type="submit" id="sub" value="Proceed">
+    </div>
+    </form>
+    </div>
+</center>
+  </section>
+    
+    
+    <footer class="tm-footer">
+        <div class="tm-us">
+        <p class="bold">About Us</p>
+        <p>We are a part of chain of luxury hotels 
+            which extends all over the world. We 
+            provide a luxorious stay with various value
+            added and free services which will make
+            you visit us over and over again.</p>    
+        </div>
+       
+        <div class="tm-address">
+        <p class="bold">Address</p>
+        <p>415, Park Avenu, Hawai
+            Phone : (211) 9275693451
+            Email : Victoria@info.com</p>    
+        </div>
+        <br/>
+    <div class="tm-media">
+        <a href="#"> <img src="../static/images/fb.png"></a>
+        <a href="#"> <img src="../static/images/G.png"> </a>
+        <a href="#"> <img src="../static/images/twittr.png"> </a>
+        <a href="#">  <img src="../static/images/insta.png"> </a>
+        
+        </div>
+<!--        <a href="#">  <img class="tm-up" src="images/up.png"> </a>-->
+    </footer>
+    
+
+    
+    </body>
+    
+</html>
+    

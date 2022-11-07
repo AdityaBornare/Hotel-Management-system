@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Victoria Hotel</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/dist/pickmeup.min.js"></script>
+  <script type="text/javascript" src="../static/dist/handleCounter.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/pickmeup.css">
+  <link rel="stylesheet" type="text/css" href="../static/handle-counter.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script type="text/javascript" src="../static/dist/jquery.scrollUp.js"></script>
+   <script type="text/javascript" src="../static/dist/demo.js"></script>
+   <style>
+    table, th, td {
+      border: 2px solid rgb(245, 245, 245);
+      border-collapse: collapse;
+    }
+    </style>
+    
+    
+    </head>
+    
+<body>
+    <header class="tm-header">
+        <img class="tm-logo" src="../static/images/Victoria.png" alt="Majestic Hotel">
+        <nav class="tm-nav">
+       <div>
+            <ul>
+                <ul>
+                    <li class="tm-list"><form class="tm-list" action="/home" method="GET">
+                      <input type="submit" value="Home">
+                      </form>
+                  </li>
+                  <li><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3></li>
+                  <li class="tm-list"><form class="tm-list" action="/rooms" method="GET">
+                      <input type="submit" value="Rooms">
+                      </form>
+                  </li>
+                  <li><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3></li>
+                  <li class="tm-list"><form class="tm-list" action="/home" method="GET">
+                      <input type="submit" value="Explore">
+                      </form>
+                  </li>
+                  </ul> 
+            </ul>    
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="tm-main">
+           <p>Bill</p>
+    </section>
+    
+    
+    
+    <section class="tm-booking">
+      <center>
+      <div class="container">
+        <form class="grid" action="/Generate_Bill" method="GET">
+            <table>
+                <tr>
+                    <td><center><label  for="Book_no" id="inlinelable">Booking no</label></center></td>
+                    <td><input type="text" id="Book_id" name="Book_id" value={{Book_id}}></td>
+                </tr>
+                <tr>
+                    <td><center><label  for="name" id="inlinelable">Customer name</label></center></td>
+                    <td><input type="text" id="name" name="name" value={{name}}></td>
+                </tr>
+                <tr>
+                    <td><center><label for="date1">Arrival date</label></center></td>
+                    <td><center><input type="text" id="arr" name="arr" value={{arr}}></center></td>
+                </tr>
+                <tr>
+                    <td><center><label  for="rooms" id="inlinelable">Room type</label></center></td>
+                    <td><input type="text" id = "room_type" name="room_type" value = {{room_type}}></td>
+                </tr>
+                <tr>
+                    <td><center><label for="rate">room rate</label></center></td>
+                    <td><input type="text" id ="rate" name="rate" value={{rate}}></td>
+                </tr>
+                <tr>
+                    <td><center><label  for="gst" id="inlinelable">Gst</label></center></td>
+                    <td><input type="text" id="gst" name="gst" value={{gst}}></td>
+                </tr>
+                <tr>
+                    <td><center><label  for="total" id="inlinelable">Total</label></center></td>
+                    <td><input type="text" id="total" name="total" value={{total}}></td>
+                </tr>
+                <tr>
+                    <td><center><label  for="payment" id="inlinelable">payment mode</label></center></td>
+                    <td><input type="text" id="payment" name="payment" value={{payment}}></td>
+                </tr>
+            </table>
+            </form>
+              </div>
+      </center>
+  </section>
+    
+    
+    <footer class="tm-footer">
+        <div class="tm-us">
+        <p class="bold">About Us</p>
+        <p>We are a part of chain of luxury hotels 
+            which extends all over the world. We 
+            provide a luxorious stay with various value
+            added and free services which will make
+            you visit us over and over again.</p>    
+        </div>
+       
+        <div class="tm-address">
+        <p class="bold">Address</p>
+        <p>415, Park Avenu, Hawai
+            Phone : (211) 9275693451
+            Email : majestic@info.com</p>    
+        </div>
+        <br/>
+    <div class="tm-media">
+        <a href="#"> <img src="../static/images/fb.png"></a>
+        <a href="#"> <img src="../static/images/G.png"> </a>
+        <a href="#"> <img src="../static/images/twittr.png"> </a>
+        <a href="#">  <img src="../static/images/insta.png"> </a>
+        </div>
+<!--        <a href="#">  <img class="tm-up" src="images/up.png"> </a>-->
+    </footer>
+    
+
+    
+    </body>
+    
+</html>
